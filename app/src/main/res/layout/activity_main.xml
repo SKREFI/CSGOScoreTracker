@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skrefi.csgoscoretracker.MainActivity">
+
+    <ImageView
+        android:id="@+id/mian_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_screen" />
+
+    <Button
+        android:id="@+id/CTbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginStart="46dp"
+        android:onClick="addPointCT"
+        android:text="CT +1" />
+
+    <Button
+        android:id="@+id/Tbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="46dp"
+        android:onClick="addPointT"
+        android:text="T +1" />
+
+    <TextView
+        android:id="@+id/ctScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Tbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/CTscore"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Tbutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/Tscore"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp" />
+</RelativeLayout>
