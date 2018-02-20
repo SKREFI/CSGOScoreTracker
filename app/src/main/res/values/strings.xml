@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">CSGO Score Tracker</string>
-
-    <string name="CTscore">0</string>
-    <string name="Tscore">0</string>
 </resources>
